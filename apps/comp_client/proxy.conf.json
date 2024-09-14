@@ -1,0 +1,6 @@
+{
+  "/comp_server": {
+    "target": "http://localhost:3333",
+    "secure": false
+  }
+}
