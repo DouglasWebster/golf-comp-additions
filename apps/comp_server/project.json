@@ -1,0 +1,26 @@
+{
+  "name": "comp_server",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/comp_server/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "dependsOn": ["build"],
+      "options": {
+        "buildTarget": "comp_server:build",
+        "runBuildTargetDependencies": false
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "comp_server:build:development"
+        },
+        "production": {
+          "buildTarget": "comp_server:build:production"
+        }
+      }
+    }
+  }
+}
