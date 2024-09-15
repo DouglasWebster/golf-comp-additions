@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@comp_lib/shared/domain": ["shared/src/index.ts"]
+      "@comp/server/feature-comp": ["libs/server/src/index.ts"],
+      "@comp_lib/shared/domain": ["libs/shared/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

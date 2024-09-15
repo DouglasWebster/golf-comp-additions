@@ -15,6 +15,14 @@
               {
                 "sourceTag": "*",
                 "onlyDependOnLibsWithTags": ["*"]
+              },
+              {
+                "sourceTag": "scope:server",
+                "onlyDependOnLibsWithTags":["scope:server", "scope:shared"]
+              },
+              {
+                "sourceTag": "scope:client",
+                "onlyDependOnLibsWithTags": ["scope.client", "scope:shared"]
               }
             ]
           }
@@ -24,7 +32,21 @@
     {
       "files": ["*.ts", "*.tsx"],
       "extends": ["plugin:@nx/typescript"],
-      "rules": {}
+      "rules": {
+        "@nx/enforce-module-boundaries": [
+          "error",
+          {
+            "enforceBuildableLibDependency":true,
+            "allow": [],
+            "depConstraints":[
+              {
+                "sourceTag":"*",
+                "onlyDependOnLibsWithTags":["*"]
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "files": ["*.js", "*.jsx"],

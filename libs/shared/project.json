@@ -1,7 +1,7 @@
 {
   "name": "domain",
   "$schema": "../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "shared/src",
+  "sourceRoot": "libs/shared/src",
   "projectType": "library",
   "tags": ["scope:shared", "type:domain"],
   "targets": {
@@ -10,8 +10,8 @@
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/shared",
-        "main": "shared/src/index.ts",
-        "tsConfig": "shared/tsconfig.lib.json",
+        "main": "libs/shared/src/index.ts",
+        "tsConfig": "libs/shared/tsconfig.lib.json",
         "assets": ["shared/*.md"]
       }
     }

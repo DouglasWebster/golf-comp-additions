@@ -4,7 +4,7 @@
   "projectType": "application",
   "prefix": "cbe",
   "sourceRoot": "apps/comp_client/src",
-  "tags": ["type:app", "scope:client"],
+  "tags": ["scope:client", "type:app"],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
