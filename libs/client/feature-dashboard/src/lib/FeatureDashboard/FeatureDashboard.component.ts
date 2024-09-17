@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+import { ApiService} from '@comp/client/data-access'
 
 @Component({
   selector: 'lib-feature-dashboard',
@@ -8,4 +10,8 @@ import { CommonModule } from '@angular/common';
   templateUrl: './FeatureDashboard.component.html',
   styleUrl: './FeatureDashboard.component.scss',
 })
-export class FeatureDashboardComponent {}
+export class FeatureDashboardComponent {
+  private readonly apiService = inject(ApiService);
+
+  competitorItems$ = this.apiService.getAllCompetitorItems();
+}

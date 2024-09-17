@@ -1,7 +1,7 @@
-import { ICompetitor } from "@comp_lib/shared/domain";
+import { ICompetitor, ICreateCompetitor, IUpdateCompetitor, IUpsertCompetitor } from "@comp_lib/shared/domain";
 import { IsNotEmpty, IsNumber, IsString } from "class-validator";
 
-export class CreateCompetitorDto implements Pick<ICompetitor, 'first_name' | 'last_name' | 'age' | 'gender'> {
+export class CreateCompetitorDto implements ICreateCompetitor {
    @IsString()
    @IsNotEmpty()
    first_name!: string;
@@ -15,5 +15,27 @@ export class CreateCompetitorDto implements Pick<ICompetitor, 'first_name' | 'la
 
    @IsNumber()
    age!: number;
+}
 
+export class UpsertCompetitorDto implements IUpsertCompetitor {
+   @IsNumber()
+   id!: number; 
+
+   @IsString()
+   @IsNotEmpty()
+   first_name!: string;
+
+   @IsString()
+   @IsNotEmpty()
+   last_name!: string;
+
+   @IsString()
+   gender!: string;
+
+   @IsNumber()
+   age!: number;
+}
+
+export class UpdateCompetitorDto implements IUpdateCompetitor {
+   
 }

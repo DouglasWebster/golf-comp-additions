@@ -1,1 +1,8 @@
 <p>FeatureDashboard works!</p>
+
+<div class="competitor-list">
+    <div class="competitor" *ngFor="let competitor of competitorItems$ | async; ">
+        <h2 class="competitor_name">{{competitor.id}}: {{competitor.first_name}} {{competitor.last_name}}</h2>
+        <p class="competitor_details">{{ competitor.gender}} Aged: {{competitor.age}}</p>
+    </div>
+</div>

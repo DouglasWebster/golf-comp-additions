@@ -3,7 +3,7 @@ import { ServerFeatureCompService } from './server-feature-comp.service';
 import { ICompetitor } from '@comp_lib/shared/domain';
 import { CreateCompetitorDto } from './dtos/comp.dto';
 
-@Controller('server-feature-comp')
+@Controller({path: 'competitors'})
 export class ServerFeatureCompController {
   constructor(private serverFeatureCompService: ServerFeatureCompService) {}
 
