@@ -1,0 +1,9 @@
+{
+  "name": "data-access-comp",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/server/data-access-com/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project data-access-comp --web",
+  "targets": {}
+}

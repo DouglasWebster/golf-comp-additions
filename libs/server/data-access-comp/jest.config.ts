@@ -1,11 +1,11 @@
 /* eslint-disable */
 export default {
-  displayName: 'server-feature-comp',
-  preset: '../../jest.preset.js',
+  displayName: 'data-access-comp',
+  preset: '../../../jest.preset.js',
   testEnvironment: 'node',
   transform: {
     '^.+\\.[tj]s$': ['ts-jest', { tsconfig: '<rootDir>/tsconfig.spec.json' }],
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../coverage/libs/server',
+  coverageDirectory: '../../../coverage/libs/server/data-access-com',
 };

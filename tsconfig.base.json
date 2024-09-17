@@ -22,6 +22,9 @@
       "@comp/client/feature-dashboard": [
         "libs/client/feature-dashboard/src/index.ts"
       ],
+      "@comp/server/data-access-comp": [
+        "libs/server/data-access-com/src/index.ts"
+      ],
       "@comp/server/feature-comp": ["libs/server/src/index.ts"],
       "@comp_lib/shared/domain": ["libs/shared/src/index.ts"]
     }
