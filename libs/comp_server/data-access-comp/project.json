@@ -1,9 +1,0 @@
-{
-  "name": "DataAccessComp",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/comp_server/data-access-comp/src",
-  "projectType": "library",
-  "tags": ["scope:server", "type:data-access"],
-  "// targets": "to see all targets run: nx show project DataAccessComp --web",
-  "targets": {}
-}
