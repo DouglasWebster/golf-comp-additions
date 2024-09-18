@@ -3,9 +3,8 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "apps/comp_client-e2e/src",
-  "implicitDependencies": ["comp_client"],
-  "// targets": "to see all targets run: nx show project comp_client-e2e --web",
   "tags": [],
+  "implicitDependencies": ["CompClient"],
+  "// targets": "to see all targets run: nx show project comp_client-e2e --web",
   "targets": {}
 }
-  

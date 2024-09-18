@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'comp_server',
+  displayName: 'CompServer',
   preset: '../../jest.preset.js',
   testEnvironment: 'node',
   transform: {

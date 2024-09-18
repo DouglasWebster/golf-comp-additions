@@ -1,5 +1,5 @@
 {
-  "name": "comp_client",
+  "name": "CompClient",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "cbe",
@@ -53,10 +53,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "comp_client:build:production"
+          "buildTarget": "CompClient:build:production"
         },
         "development": {
-          "buildTarget": "comp_client:build:development"
+          "buildTarget": "CompClient:build:development"
         }
       },
       "defaultConfiguration": "development",
@@ -67,7 +67,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "comp_client:build"
+        "buildTarget": "CompClient:build"
       }
     },
     "lint": {
@@ -83,7 +83,7 @@
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "comp_client:build",
+        "buildTarget": "CompClient:build",
         "port": 4200,
         "staticFilePath": "dist/apps/comp_client/browser",
         "spa": true

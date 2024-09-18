@@ -1,5 +1,5 @@
 {
-  "name": "comp_server",
+  "name": "CompServer",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/comp_server/src",
   "projectType": "application",
@@ -10,15 +10,15 @@
       "defaultConfiguration": "development",
       "dependsOn": ["build"],
       "options": {
-        "buildTarget": "comp_server:build",
+        "buildTarget": "CompServer:build",
         "runBuildTargetDependencies": false
       },
       "configurations": {
         "development": {
-          "buildTarget": "comp_server:build:development"
+          "buildTarget": "CompServer:build:development"
         },
         "production": {
-          "buildTarget": "comp_server:build:production"
+          "buildTarget": "CompServer:build:production"
         }
       }
     }
