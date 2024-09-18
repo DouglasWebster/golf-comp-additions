@@ -1,5 +1,5 @@
 {
-  "name": "comp_server-e2e",
+  "name": "CompServerE2E",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "implicitDependencies": ["CompServer"],
@@ -8,7 +8,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{e2eProjectRoot}"],
       "options": {
-        "jestConfig": "apps/comp_server-e2e/jest.config.ts",
+        "jestConfig": "apps/comp-server-e2e/jest.config.ts",
         "passWithNoTests": true
       },
       "dependsOn": ["comp_server:build"]
