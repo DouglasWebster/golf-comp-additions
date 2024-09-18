@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { ServerFeatureCompModule } from 'libs/server/feature-comp/src';
+import { ServerFeatureCompModule } from '@comp/server/feature-comp';
 
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
