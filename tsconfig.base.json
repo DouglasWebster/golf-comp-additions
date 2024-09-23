@@ -23,7 +23,7 @@
         "libs/server/data-access-com/src/index.ts"
       ],
       "@comp/server/feature-comp": ["libs/server/feature-comp/src/index.ts"],
-      "@comp_lib/shared/domain": ["libs/shared/src/index.ts"]
+      "@libs/shared/domain_data": ["libs/shared/src/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

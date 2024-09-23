@@ -5,7 +5,7 @@ import {
   ICreateCompetitor,
   IUpdateCompetitor,
   IUpsertCompetitor,
-} from '@comp_lib/shared/domain';
+} from '@libs/shared/domain_data';
 import { Observable, of } from 'rxjs';
 
 @Injectable({

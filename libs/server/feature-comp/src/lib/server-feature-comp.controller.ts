@@ -1,9 +1,9 @@
 import { Body, Controller, Get, Param, Post } from '@nestjs/common';
 import { ServerFeatureCompService } from './server-feature-comp.service';
-import { ICompetitor } from '@comp_lib/shared/domain';
+import { ICompetitor } from '@libs/shared/domain_data';
 import { CreateCompetitorDto } from './dtos/comp.dto';
 
-@Controller({path: 'competitors'})
+@Controller({ path: 'competitors' })
 export class ServerFeatureCompController {
   constructor(private serverFeatureCompService: ServerFeatureCompService) {}
 
@@ -21,5 +21,4 @@ export class ServerFeatureCompController {
   create(@Body() data: CreateCompetitorDto): ICompetitor {
     return this.serverFeatureCompService.create(data);
   }
-
 }

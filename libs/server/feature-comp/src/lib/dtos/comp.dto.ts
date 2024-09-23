@@ -1,41 +1,44 @@
-import { ICompetitor, ICreateCompetitor, IUpdateCompetitor, IUpsertCompetitor } from "@comp_lib/shared/domain";
-import { IsNotEmpty, IsNumber, IsString } from "class-validator";
+import {
+  ICompetitor,
+  ICreateCompetitor,
+  IUpdateCompetitor,
+  IUpsertCompetitor,
+} from '@libs/shared/domain_data';
+import { IsNotEmpty, IsNumber, IsString } from 'class-validator';
 
 export class CreateCompetitorDto implements ICreateCompetitor {
-   @IsString()
-   @IsNotEmpty()
-   first_name!: string;
+  @IsString()
+  @IsNotEmpty()
+  first_name!: string;
 
-   @IsString()
-   @IsNotEmpty()
-   last_name!: string;
+  @IsString()
+  @IsNotEmpty()
+  last_name!: string;
 
-   @IsString()
-   gender!: string;
+  @IsString()
+  gender!: string;
 
-   @IsNumber()
-   age!: number;
+  @IsNumber()
+  age!: number;
 }
 
 export class UpsertCompetitorDto implements IUpsertCompetitor {
-   @IsNumber()
-   id!: number; 
+  @IsNumber()
+  id!: number;
 
-   @IsString()
-   @IsNotEmpty()
-   first_name!: string;
+  @IsString()
+  @IsNotEmpty()
+  first_name!: string;
 
-   @IsString()
-   @IsNotEmpty()
-   last_name!: string;
+  @IsString()
+  @IsNotEmpty()
+  last_name!: string;
 
-   @IsString()
-   gender!: string;
+  @IsString()
+  gender!: string;
 
-   @IsNumber()
-   age!: number;
+  @IsNumber()
+  age!: number;
 }
 
-export class UpdateCompetitorDto implements IUpdateCompetitor {
-   
-}
+export class UpdateCompetitorDto implements IUpdateCompetitor {}
