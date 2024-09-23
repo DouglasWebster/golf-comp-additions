@@ -1,9 +1,9 @@
 {
-  "name": "data-access-comp",
+  "name": "ServerDataAccess",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/server/data-access-com/src",
   "projectType": "library",
   "tags": [],
-  "// targets": "to see all targets run: nx show project data-access-comp --web",
+  "// targets": "to see all targets run: nx show project ServerDataAccess --web",
   "targets": {}
 }
