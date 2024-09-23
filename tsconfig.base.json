@@ -15,8 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@comp/ClientDataAccess": [
-        "libs/client/data-access/src/index.ts"],
+      "@comp/ClientDataAccess": ["libs/client/data-access/src/index.ts"],
       "@comp/client/feature-dashboard": [
         "libs/client/feature-dashboard/src/index.ts"
       ],
