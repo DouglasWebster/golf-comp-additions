@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'DataAccess',
+  displayName: 'ClientDataAccess',
   preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   coverageDirectory: '../../../coverage/libs/client/data-access',

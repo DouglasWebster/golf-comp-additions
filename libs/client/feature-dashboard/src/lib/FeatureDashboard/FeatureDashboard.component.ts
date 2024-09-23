@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ApiService} from '@comp/client/data-access'
+import { ApiService } from '@comp/ClientDataAccess';
 
 @Component({
   selector: 'lib-feature-dashboard',
